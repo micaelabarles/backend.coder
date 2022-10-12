@@ -57,11 +57,6 @@ save = async(product) =>{
 
 }
 
-const productos = new Contenedor("productos.txt")
-
-const producto1 = {title:"product1",price:123}
-const producto2 = {title:"product2",price:234}
-const producto3 = {title:"product3",price:567}
 
 const crearProductos = async()=>{
     await productos.save(producto1)
