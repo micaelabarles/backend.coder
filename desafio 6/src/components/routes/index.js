@@ -2,7 +2,7 @@ import {response, Router} from 'express'
 import {Contenedor} from '../container.js'
 
 const router = Router()
-const contenedorProductos = new Contenedor("./productos.txt")
+const contenedorProductos = new Contenedor("../components/productos.txt")
 
 router.get("/", (req, res)=>{
 res.render('home')

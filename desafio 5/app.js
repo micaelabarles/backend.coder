@@ -13,7 +13,7 @@ app.set('views', './src/views')
 app.use(express.static('public'))
 
 
-app.use('/api/productos', router)
+app.use('/', router)
 
 app.listen(8080, ()=>{
     console.log("servidor listo en puerto 8080")
